@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentOdin">
+
+
+    <fragment
+        android:id="@+id/fragmentOdin"
+        android:name="com.example.audiolibrary.Navigation.screens.FragmentOdin"
+        android:label="fragment_odin"
+        tools:layout="@layout/fragment_odin_test1" >
+        <action
+            android:id="@+id/action_fragmentOdin_to_fragmentDwa"
+            app:destination="@id/fragmentDwa" />
+        <action
+            android:id="@+id/action_fragmentOdin_to_fragmentTri"
+            app:destination="@id/fragmentTri" />
+        <action
+            android:id="@+id/action_fragmentOdin_to_fragmentChetire"
+            app:destination="@id/fragmentChetire" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragmentDwa"
+        android:name="com.example.audiolibrary.Navigation.screens.FragmentDwa"
+        android:label="FragmentDwa"
+        tools:layout="@layout/fragment_dwa"/>
+
+
+    <fragment
+        android:id="@+id/fragmentTri"
+        android:name="com.example.audiolibrary.Navigation.screens.FragmentTri"
+        android:label="FragmentTri"
+        tools:layout="@layout/fragment_tri"/>
+
+
+    <fragment
+        android:id="@+id/fragmentChetire"
+        android:name="com.example.audiolibrary.Navigation.screens.FragmentChetire"
+        android:label="FragmentChetire"
+        android:launchMode="singleTask"
+        tools:layout="@layout/fragment_chetire">
+    </fragment>
+
+
+</navigation>

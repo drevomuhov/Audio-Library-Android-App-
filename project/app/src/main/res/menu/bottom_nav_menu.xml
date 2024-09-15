@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragmentOdin"
+        android:icon='@drawable/ic_bottom_nav_music'
+        android:title="Профиль" />
+    <item
+        android:id="@+id/fragmentDwa"
+        android:icon='@drawable/ic_bottom_nav_playlist'
+        android:title="Плейлисты" />
+    <item
+        android:id="@+id/fragmentTri"
+        android:icon='@drawable/ic_bottom_nav_friends'
+        android:title="Друзья" />
+    <item
+        android:id="@+id/fragmentChetire"
+        android:icon='@drawable/ic_bottom_nav_profile'
+        android:title="Аудиозаписи" />
+</menu>

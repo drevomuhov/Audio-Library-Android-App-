@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Audio Library</string>
+
+    <!-- ТЕКСТОВЫЕ РЕСУРСЫ MAIN_ACTIVITY.XML -->
+    <string name="mainactivity_title_part1">AUDIO</string>
+    <string name="mainactivity_title_part2">LIBRARY</string>
+    <string name="mainactivity_image1">изображение</string>
+    <string name="mainactivity_authbutton_text">ВОЙТИ В АККАУНТ</string>
+    <string name="mainactivity_regbutton_text_part1">Нет аккаунта?</string>
+    <string name="mainactivity_regbutton_text_part2">РЕГИСТРАЦИЯ</string>
+
+    <!-- ТЕКСТОВЫЕ РЕСУРСЫ SPLASHSCREEN.XML -->
+    <string name="splashscreen_title_part1">AUDIO</string>
+    <string name="splashscreen_title_part2">LIBRARY</string>
+
+    <!-- ТЕКСТОВЫЕ РЕСУРСЫ MAIN_ACTIVITY.XML -->
+    <string name="regactivity_title_part1">РЕГИСТРАЦИЯ</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_fragment_manager">FragmentManager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

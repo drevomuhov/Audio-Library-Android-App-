@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".BottomSheetAdd">
+
+    <ImageView
+        android:id="@+id/swipe"
+        android:layout_width="30dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/swipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/selectBlock_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="Добавить"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swipe" />
+
+    <LinearLayout
+        android:id="@+id/selectBlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingBottom="35dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/selectBlock_title">
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edittext_field"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="Введите название аудиозаписи..." />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/selectBlock_add_audio_button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Аудиозапись"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/predictBlock_select_button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/yellow"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Плейлист"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addAudio_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="35dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/selectBlock">
+
+        <TextView
+            android:id="@+id/addAudio_block_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="Новая аудиозапись"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/addAudio_block_title_field"
+            android:layout_width="311dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_field"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:hint="Название"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/addAudio_block_performer_field"
+            android:layout_width="311dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_field"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:hint="Исполнитель"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="311dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/addAudio_block_select_audio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Выбрать файл"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/addAudio_block_upload_audio_button"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/yellow"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Опубликовать"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/infoAudio_block"
+            android:layout_width="311dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/edit_text_color"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/infoAudio_block_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:gravity="center"
+                android:text="Статус выбора файла"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/addPlaylist_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="35dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/addAudio_block">
+
+        <TextView
+            android:id="@+id/addPlaylist_block_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="Новый плейлист"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/addPlaylist_block_title_field"
+            android:layout_width="311dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_field"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:hint="Название"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="311dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/addPlaylist_block_invisible_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Выбрать файл"
+
+                android:textSize="14sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/addPlaylist_block_create_button"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@color/yellow"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Создать"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

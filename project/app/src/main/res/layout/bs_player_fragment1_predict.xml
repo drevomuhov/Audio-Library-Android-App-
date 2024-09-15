@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Navigation.screens.PlayerActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:paddingBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:elevation="5dp"
+            app:srcCompat="@drawable/audio_default" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title_audio_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="Название"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/performer_audio_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/sf_pro_display_light"
+                android:text="Исполнитель"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_audio_player" />
+
+            <ImageView
+                android:id="@+id/player_play_button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/player_audio_progress"
+                tools:background="@drawable/ic_player_pause" />
+
+            <ImageView
+                android:id="@+id/player_like_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.115"
+                app:layout_constraintStart_toEndOf="@+id/title_audio_player"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="@drawable/like_empty" />
+
+            <ImageView
+                android:id="@+id/player_previous_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_player_forward"
+                app:layout_constraintBottom_toBottomOf="@+id/player_play_button"
+                app:layout_constraintEnd_toStartOf="@+id/player_play_button"
+                app:layout_constraintTop_toTopOf="@+id/player_play_button" />
+
+            <ImageView
+                android:id="@+id/player_next_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_player_next"
+                app:layout_constraintBottom_toBottomOf="@+id/player_play_button"
+                app:layout_constraintStart_toEndOf="@+id/player_play_button"
+                app:layout_constraintTop_toTopOf="@+id/player_play_button" />
+
+            <SeekBar
+                android:id="@+id/player_audio_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:progressBackgroundTint="@color/gray"
+                android:progressTint="@color/black"
+                android:thumbTint="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/performer_audio_player"
+                tools:layout_editor_absoluteX="28dp" />
+
+            <TextView
+                android:id="@+id/time_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35dp"
+                android:layout_weight="0"
+                android:fontFamily="@font/sf_pro_display_light"
+                android:text="00:00"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/player_audio_progress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/performer_audio_player"
+                app:layout_constraintVertical_bias="0.052" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

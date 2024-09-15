@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/swipe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/signUp_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="35dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+                <TextView
+                    android:id="@+id/signUp_block_bs_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:text="Регистрация"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/signUp_block_email_field"
+                    android:layout_width="311dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/edittext_field"
+                    android:fontFamily="@font/sf_pro_display_light"
+                    android:hint="E-mail"
+                    android:inputType="text"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/signUp_block_login_field"
+                    android:layout_width="311dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/edittext_field"
+                    android:fontFamily="@font/sf_pro_display_light"
+                    android:hint="Имя пользователя"
+                    android:inputType="text"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/signUp_block_password_field"
+                    android:layout_width="311dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_field"
+                    android:fontFamily="@font/sf_pro_display_light"
+                    android:textSize="14sp"
+                    android:hint="Пароль"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp" />
+
+                <LinearLayout
+                    android:layout_width="311dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/signUp_block_signIn_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sf_pro_display_bold"
+                            android:text="Войти"
+                            android:layout_marginStart="47dp"
+                            android:layout_gravity="center"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/signUp_block_signUp_button"
+                            android:layout_width="200dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="right"
+                            android:backgroundTint="@color/yellow"
+                            android:fontFamily="@font/sf_pro_display_bold"
+                            android:text="Создать профиль"
+                            android:layout_marginStart="20dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/signIn_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="35dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/signUp_block"
+            tools:layout_editor_absoluteX="0dp">
+
+                <TextView
+                    android:id="@+id/signIn_block_bs_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:text="Вход"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/signIn_block_email_field"
+                    android:layout_width="311dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edittext_field"
+                    android:fontFamily="@font/sf_pro_display_light"
+                    android:hint="E-mail"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/signIn_block_password_field"
+                    android:layout_width="311dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/edittext_field"
+                    android:fontFamily="@font/sf_pro_display_light"
+                    android:hint="Пароль"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp" />
+
+                <LinearLayout
+                    android:layout_width="311dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/signIn_block_signUp_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sf_pro_display_bold"
+                            android:text="Создать"
+                            android:layout_marginStart="40dp"
+                            android:layout_gravity="center"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/signIn_block_signIn_button"
+                            android:layout_width="200dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="right"
+                            android:backgroundTint="@color/yellow"
+                            android:fontFamily="@font/sf_pro_display_bold"
+                            android:text="Войти в профиль"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

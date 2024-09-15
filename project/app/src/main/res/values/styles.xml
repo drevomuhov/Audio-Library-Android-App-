@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Стиль для анимации диалогового окна -->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/open_select_playlist_dialog</item>
+    </style>
+
+
+    <style name="PopupMenuStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/edittext_field</item> <!-- Фон с скругленными углами -->
+    </style>
+
+    <style name="floatButton" parent="">
+        <item name="cornerSize">50dp</item>
+    </style>
+
+</resources>
