@@ -6,4 +6,10 @@
 ![Пример GIF](https://github.com/drevomuhov/Audio-Library-Android-App-/blob/main/images/image9.gif)
 ![Пример GIF](https://github.com/drevomuhov/Audio-Library-Android-App-/blob/main/images/image8.gif)
 
+-------------------------------------------------------------------------------------------------------
+
+После того как пользователь будет авторизован в приложении он попадает в основной раздел, где он может выполнять различные действия со своими аудиозаписями и плейлистами.
+
+![Пример GIF](https://github.com/drevomuhov/Audio-Library-Android-App-/blob/main/images/image10.gif)
+![Пример GIF](https://github.com/drevomuhov/Audio-Library-Android-App-/blob/main/images/image11.gif)
 
