@@ -20,3 +20,9 @@
 ![Пример GIF](https://github.com/drevomuhov/Audio-Library-Android-App-/blob/main/images/image13.gif)
 ![Пример GIF](https://github.com/drevomuhov/Audio-Library-Android-App-/blob/main/images/image12.gif)
 
+-------------------------------------------------------------------------------------------------------
+
+Приложение с помощью специального алгоритма определяет насколько пользователь был заинтересован в подобранной ему аудиозаписи, но также у пользователя есть возможность самостоятельно оценить соответсвтие трека его эмоциональному состоянию (нравится/не нравится)
+
+![Пример GIF](https://github.com/drevomuhov/Audio-Library-Android-App-/blob/main/images/image14.gif)
+
