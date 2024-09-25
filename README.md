@@ -13,3 +13,10 @@
 ![Пример GIF](https://github.com/drevomuhov/Audio-Library-Android-App-/blob/main/images/image10.gif)
 ![Пример GIF](https://github.com/drevomuhov/Audio-Library-Android-App-/blob/main/images/image11.gif)
 
+-------------------------------------------------------------------------------------------------------
+
+Также у пользователя есть возможность сгенерировать плейлист в соответсвии со своим эмоциональным состоянием. Если настроение грустное, то приложение предложит пользователю его улучшить или же оставить как есть. Также пользователь может сохранить сгенерированный плейлист в свои плейлисты.
+
+![Пример GIF](https://github.com/drevomuhov/Audio-Library-Android-App-/blob/main/images/image13.gif)
+![Пример GIF](https://github.com/drevomuhov/Audio-Library-Android-App-/blob/main/images/image12.gif)
+
